@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>jQueryHolic - Demo - Mengubah style scrollbar web</title>
+
+  <style>
+    body {padding:15px 30px;font-family:sans-serif;}
+
+    ::-webkit-scrollbar { -webkit-appearance: none; } 
+    ::-webkit-scrollbar:vertical { width: 6px; } 
+    ::-webkit-scrollbar:horizontal { height: 6px; } 
+    ::-webkit-scrollbar-thumb { 
+      border-radius: 6px; 
+      border: 2px solid rgba(255,255,255,.15); 
+      }
+    ::-webkit-scrollbar-track { 
+      background-color: rgba(255,255,255,.15); 
+    }
+    .scroll {
+      overflow-y:scroll;
+      height:130px;
+      width:400px;
+      overflow-x: scroll;
+      word-wrap:break-word;
+      overflow-wrap:break-word;
+      word-break:break-all;
+      word-break:break-word;
+      hyphens:auto;
+      -webkit-hyphens:auto;
+      -moz-hyphens:auto;
+      display:inline-block;
+      margin:10px;
+    }
+    p {width:120%;}
+    .biru::-webkit-scrollbar-thumb {
+    	background-color: #0D8FDB;
+    }
+    .merah::-webkit-scrollbar-thumb{
+      background-color: #B72915;    
+    }
+    .hijau::-webkit-scrollbar-thumb{
+      background-color: #528B21;    
+    }
+    .kuning::-webkit-scrollbar-thumb{
+      background-color: #CECE0F;    
+    }      
+  </style>  
+  </head>
+  <body>
+  	<h2>Kembali ke artikel <a href="https://jqueryholic.blogspot.com/2017/04/mengubah-style-scrollbar-website-dan-blog.html" target="_blank">Mengubah style scrollbar web</a></h2>
+	  <div class="scroll merah">
+	    <h3>Merah</h3>
+	    <p>
+				::-webkit-scrollbar { -webkit-appearance: none; }<br /> 
+				::-webkit-scrollbar:vertical { width: 6px; }<br /> 
+				::-webkit-scrollbar:horizontal { height: 6px; } <br />
+				::-webkit-scrollbar-thumb { <br />
+				  &nbsp;&nbsp;background-color: #B72915; <br />
+				  &nbsp;&nbsp;border-radius: 6px; <br />
+				  &nbsp;&nbsp;border: 2px solid rgba(255,255,255,.15);<br /> 
+				  }<br />
+				::-webkit-scrollbar-track {<br /> 
+				  &nbsp;&nbsp;background-color: rgba(255,255,255,.15);<br />  
+				}
+	    </p>
+	  </div>
+	  <div class="scroll hijau">
+	    <h3>Hijau</h3>
+	    <p>
+				::-webkit-scrollbar { -webkit-appearance: none; }<br /> 
+				::-webkit-scrollbar:vertical { width: 6px; }<br /> 
+				::-webkit-scrollbar:horizontal { height: 6px; } <br />
+				::-webkit-scrollbar-thumb { <br />
+				  &nbsp;&nbsp;background-color: #528B21; <br />
+				  &nbsp;&nbsp;border-radius: 6px; <br />
+				  &nbsp;&nbsp;border: 2px solid rgba(255,255,255,.15);<br /> 
+				  }<br />
+				::-webkit-scrollbar-track {<br /> 
+				  &nbsp;&nbsp;background-color: rgba(255,255,255,.15);<br />  
+				}
+	    </p>
+	  </div>  
+
+	  <div class="scroll biru">
+	    <h3>Biru</h3>
+	    <p>
+				::-webkit-scrollbar { -webkit-appearance: none; }<br /> 
+				::-webkit-scrollbar:vertical { width: 6px; }<br /> 
+				::-webkit-scrollbar:horizontal { height: 6px; } <br />
+				::-webkit-scrollbar-thumb { <br />
+				  &nbsp;&nbsp;background-color: #0D8FDB; <br />
+				  &nbsp;&nbsp;border-radius: 6px; <br />
+				  &nbsp;&nbsp;border: 2px solid rgba(255,255,255,.15);<br /> 
+				  }<br />
+				::-webkit-scrollbar-track {<br />  
+				  &nbsp;&nbsp;background-color: rgba(255,255,255,.15);<br />  
+				}
+	    </p>
+	  </div>
+
+	  <div class="scroll kuning">
+	    <h3>Kuning</h3>
+	    <p>
+				::-webkit-scrollbar { -webkit-appearance: none; }<br /> 
+				::-webkit-scrollbar:vertical { width: 6px; }<br /> 
+				::-webkit-scrollbar:horizontal { height: 6px; } <br />
+				::-webkit-scrollbar-thumb { <br />
+				  &nbsp;&nbsp;background-color: #CECE0F; <br />
+				  &nbsp;&nbsp;border-radius: 6px; <br />
+				  &nbsp;&nbsp;border: 2px solid rgba(255,255,255,.15);<br /> 
+				  }<br />
+				::-webkit-scrollbar-track {<br /> 
+				  &nbsp;&nbsp;background-color: rgba(255,255,255,.15);<br />  
+				}
+	    </p>
+	  </div> 
+  </body>
+</html>

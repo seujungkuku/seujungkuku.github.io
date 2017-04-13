@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Parsing XML untuk Sitemap/Archive</title>
+	  <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/>
+ </head>
+ <body>
+  <div id="isi" style="margin-left:100px"></div>
+	<script>
+		$(function () {
+		// var xml = "<rss version='2.0'><channel><title>RSS Title</title></channel></rss>",
+		// xmlDoc = $.parseXML( xml ),
+		// $xml 	= $( xmlDoc );
+		// var $xml = $(jQuery.parseXML("../posts.default.xml"));
+		// alert('sue');
+		// var $cat = $xml.find('feed > category');
+		
+		// var isi = $('#isi');
+		// $cat.each(function(){
+		// 	alert('coba');
+		// 	isi.html($(this).attr('term'));
+		// });
+			function parsing(xml){
+				alert('sueeeee');
+			}
+			$.ajax({
+				type: "GET",
+	      url: "http://jqueryholic.blogspot.com/feeds/posts/default?max-results=4",
+	      dataType: "xml",
+	      success: function(){alert("test")},
+				error: function(){alert("Kesalahan data")}
+		  });
+
+
+
+		});
+	</script> 
+ </body>
+
+
+</html>

@@ -13,30 +13,42 @@
   <div id="isi" style="margin-left:100px;border:1px solid #ddd;">ss</div>
 	<script>
 		$(function () {
-			alert('kaga bisa');
-		// var xml = "<rss version='2.0'><channel><title>RSS Title</title></channel></rss>",
-		// xmlDoc = $.parseXML( xml ),
-		// $xml 	= $( xmlDoc );
-		// var $xml = $(jQuery.parseXML("../posts.default.xml"));
-		// alert('sue');
-		// var $cat = $xml.find('feed > category');
-		
-		// var isi = $('#isi');
-		// $cat.each(function(){
-		// 	alert('coba');
-		// 	isi.html($(this).attr('term'));
-		// });
-			function parsing(xml){
-				alert('sueeeee');
-			}
-			$.ajax({
-				type: "GET",
-	      url: "data.xml",
-	      dataType: "xml",
-	      success: function(){alert("test")},
-				error: function(){alert("Kesalahan data")}
-		  });
-
+$.ajax({
+type: 'GET',
+url: 'data.xml',
+dataType: 'xml',
+success: function(xml_list) {
+ 
+var xmlArr = [];
+ 
+$(xml_list).find('entry').each(function() {
+ 
+	var xml_date      	= $(this).attr('date');
+	var xml_cost 	  	= $(this).attr('cost');
+	var xml_category  	= $(this).attr('category');
+ 
+	var xml_name  	  	= $(this).find('name').text();
+	var xml_description = $(this).find('description').text();
+					  // Add matched items to an array
+	xmlArr += '&lt;tr filterCriteria="';
+	xmlArr += xml_cost;
+	xmlArr += '"&gt;&lt;td&gt;';
+	xmlArr += xml_date;
+	xmlArr += '&lt;/td&gt;&lt;td class="xml_name"&gt;';
+	xmlArr += xml_name;
+	xmlArr += '&lt;/td&gt;&lt;td&gt;';
+	xmlArr += xml_description;
+	xmlArr += '&lt;/td&gt;&lt;td&gt;';
+	xmlArr += xml_category;
+	xmlArr += '&lt;/td&gt;&lt;td class="xml_cost"&gt;$';
+	xmlArr += xml_cost;
+	xmlArr += '&lt;/td&gt;&lt;/tr&gt;';
+ 
+}); // end each loop
+ 
+ //Append array to table (this way is much faster than doing this individually for each item)
+ 
+	$(xmlArr).appendTo('#isi');
 
 
 		});

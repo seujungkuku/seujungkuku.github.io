@@ -7,23 +7,24 @@
 
     <meta name="description" content="Minimalist Modern Bootstrap Blogger">
     <meta name="author" content="ox69xo">
-    <link href="../template/html/img/mmbb.icon.colored.ico" rel="icon" type="image/x-icon"/>
+    <link href="icon-precompressed/jqh-favicon-48.ico" rel="icon" type="image/x-icon"/>
     <title>M-Detail- jQueryHolic</title>
-    <!-- <link href="../../bootstrap.min.css" rel="stylesheet"/> -->
-    <!-- <link href="../mmbb-font/styles.css" rel="stylesheet"/> -->
+    <!-- <link href="../../bootstrap.min.css" rel="stylesheet"/>
+    <link href="../mmbb-font/styles.css" rel="stylesheet"/> -->
     <link href='https://cdn.rawgit.com/seujungkuku/own/4cf59d15/bootstrap.custom.mmbb.min.css' rel='stylesheet'/>
     <link href="https://file.myfontastic.com/TERSVkx8Xd5Gw4iiHmTfWY/icons.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
     <style>
       /*.garis {border:1px solid blue}*/
     </style>
+
   </head>
 
-  <body data-template="mmbbproject.github.io">
+  <body data-template="mmbbproject.github.io" class="mobile">
     <header>
       <div class="container">
         <div class="jqh-m-brand">
-          <h2>jQueryHolic</h2>
+          <h3><a>jQueryHolic</a></h3>
         </div>
         <ul class="cssm">
           <input type="checkbox" id="collapse">
@@ -64,25 +65,25 @@
                   <div class="m-postattr">
                     <div class="m-post-author">
                       <span class="sr-only">Post Author: </span>
-                      <span class="icon jqh-user icon-sm"></span>                   
+                      <span class="icon jqh-user"></span>                   
                       <a href="javascript:;" rel="author" target="_blank" title="Author">Husein Chan Mandee</a>
                     </div>
                     <div class="m-post-date">
-                      <span class="icon jqh-calendar icon-sm"></span> 
+                      <span class="icon jqh-calendar"></span> 
                       Desember 24, 2017
                     </div>
                     <div class="m-post-tags">
                       <span class="sr-only">Tags: </span>
                       <div class="media">
                         <div class="media-left">
-                          <span class="icon jqh-tags icon-sm"></span>
+                          <span class="icon jqh-tags"></span>
                         </div>
                         <div class="media-body">
                           <a>Tech</a>, <a>Programming</a>, <a>Mobile</a>, Lainnya, Lagi
                         </div>
                       </div>
                     </div>
-                    <div class="m-post-terkait garis">
+                    <!-- <div class="m-post-terkait garis">
                       <span class="sr-only">Post Terkait: </span>
                       <div class="media">
                         <div class="media-left">
@@ -97,10 +98,10 @@
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div> <!-- /.m-postheader -->
-                <div class="post-body">
+                <div class="post-body text-right">
                   <h3 class="m-post-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cupiditate delectus saepe eum</h3>                  
                   <div class="para">
                     <h3>Judul</h3><h1>Lalu</h1>
@@ -167,38 +168,69 @@ echo &quot;ddddd&quot;;
 </div>
                   </div>
 
+                  <div class="sharemobile">
+                    <h4 class="text-center">Share this post</h4>
+                    <ul>
+                      <li>
+                        <a href="javascript:;" target="_blank">
+                          <span class="icon jqh-twitter-square icon-sm"></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" target="_blank">
+                          <span class="icon jqh-googleplus-square icon-sm"></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" target="_blank">
+                          <span class="icon jqh-facebook-square icon-sm"></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" target="_blank icon-sm">
+                          <span class="icon jqh-instagram icon-sm"></span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="javascript:;" target="_blank">
+                          <span class="icon jqh-whatsapp icon-sm"></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  
                 </div> <!-- /.post-body -->
 
                 <div class="jqh-pager">
                   <nav aria-label="Pager">
                     <ul class="detailpager m-detailpager">
-                      <li class="previous text-left">
+                      <!-- <li class="previous text-left">
                         <span>&larr; Prev</span><br />
-                        <a class="active" rel="prev" alt="nav previous page" title="nav previous page" href="javascript:;">
-                          quick provident at fugit. Neque, molestiae!
-                        </a>
+                        <a class="active" rel="prev" alt="nav previous page" title="nav previous page" href="javascript:;">http://jqueryholic.blogspot.co.id/2017/04/quick-provident-at-fugit-neque-molestiae.html?m=1</a>
+                      </li> -->
+                      <li class="previous text-left">
+                        <a href="javascript:;"><span>&larr; Prev</span></a><br />
+                        <a class="hidden" rel="prev" alt="nav previous page" title="nav previous page" href="javascript:;">http://jqueryholic.blogspot.co.id/2017/04/quick-provident-at-fugit-neque-molestiae.html?m=1</a>
                       </li>
                       <li class="next text-right">
-                        <span>Next &rarr;</span><br />
-                        <a title="nav next page" rel="next" alt="nav next page" href="javascript:;">
-                          Lorem ipsum dolor sit amet, consectetur adisuscipit.
-                        </a>
+                        <a href="javascript:;"><span>Next &rarr;</span></a><br />
+                        <a title="nav next page" class="hidden" rel="next" alt="nav next page" href="javascript:;">http://jqueryholic.blogspot.co.id/2017/04/lorem-ipsum-dolor-sit-amet-consectetur-adisuscipit.html</a>
                       </li>
                     </ul>
                   </nav>            
                 </div>
 
 
-                <div class="row m-post-terkaitb garis">
+                <!-- <div class="row m-post-terkaitb garis">
                   <h4>Post Terkait: </h4>
-                  <div class="col-xs-6 col-sm-3 col-md-3 terkaitb">
+                  <div class="col-sm-3 col-md-3 terkaitb">
                     <div class="terkaitj">
                       <a href="javascript:;">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
                       </a>
                     </div>
                   </div>
-                  <div class="col-xs-6 col-sm-3 col-md-3 terkaitb">
+                  <div class="col-sm-3 col-md-3 terkaitb">
                     <div class="terkaitj">
                       <a href="javascript:;">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
@@ -206,32 +238,79 @@ echo &quot;ddddd&quot;;
                     </div>
                   </div>
 
-                  <div class="col-xs-6 col-sm-3 col-md-3 terkaitb">
+                  <div class="col-sm-3 col-md-3 terkaitb">
                     <div class="terkaitj">
                       <a href="javascript:;">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
                       </a>
                     </div>
                   </div>
-                  <div class="col-xs-6 col-sm-3 col-md-3 terkaitb">
+                  <div class="col-sm-3 col-md-3 terkaitb">
                     <div class="terkaitj">
                       <a href="javascript:;">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
+                      </a>
+                    </div>
+                  </div>
+                </div> -->
+
+                <div class="row post-terkait m-post-terkait text-right garis">
+                  <h4>Post Terkait: </h4>
+                  <div class="col-xs-6 col-sm-4 col-md-3 garis terkait">
+                    <div class="thumbnail">
+                      <a href="javascript;:">
+                        1 Satu - Lorem ipsum dolor sit amet, consectetur Nisi. atque. Aliquid voluptatibus, cupidita
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 garis terkait">
+                    <div class="thumbnail">
+                      <a href="javascript;:">
+                        2 dua - Lorem ipsum dolor siipsum ecati illur te!
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-4 col-md-3 garis terkait">
+                    <div class="thumbnail">
+                      <a href="javascript;:">
+                        3 tiga - Lorem ipsum dolor sit amet, consectetur Nisi .t amet, consectetur Nisi. Lorem 
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 garis terkait">
+                    <div class="thumbnail">
+                      <a href="javascript;:">
+                        4 empat - Lorem ipsum dolor sit amet, consectetur Nisim! Ut veniam, rerum quis totam ab, cum commodi erro.
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 garis terkait">
+                    <div class="thumbnail">
+                      <a href="javascript;:">
+                        3 tiga - Lorem ipsum dolor sit amet, consectetur Nisi .t amet, consectetur Nisi. Lorem 
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-4 col-md-3 garis terkait">
+                    <div class="thumbnail">
+                      <a href="javascript;:">
+                        4 empat - Lorem ipsum dolor sit amet, consectetur Nisim! Ut veniam, rerum quis totam ab, cum commodi erro.
                       </a>
                     </div>
                   </div>
                 </div>
-
+                <div class="post-comment garis text-right">
+                  <h5>Post Comment Disqus</h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores harum, nulla numquam delectus. Minus, commodi, pariatur. Eius cumque, ducimus aliquid iusto quidem earum, nisi iste. Recusandae quos magnam perferendis velit!
+                </div>
               </div> <!-- /.col post-detail-->
             </article>
 
            </div> <!-- .row #jqh-home -->
           </div> <!-- .col jqh-home -->
-          <div class="col-sm-12 col-md-3 garis" id="jqh-sidebar">
-           <aside>
+          <aside class="col-sm-12 col-md-3 garis" id="jqh-sidebar">
              <div class="row">
               <div class="col-sm-6 col-md-12">
-
                 <div class="widget"><!--archive-->
                   <div class="col-sm-12 col-md-12 jqh-archive jqh-m-archive">
                    <h4>Archive</h4>
@@ -243,21 +322,21 @@ echo &quot;ddddd&quot;;
                           <span class='post-count badge' dir='ltr'>8</span>
                           <a class='post-count-link' href='http://ip3web.blogspot.co.id/search?updated-min=2017-01-01T00:00:00-08:00&amp;updated-max=2018-01-01T00:00:00-08:00&amp;max-results=8'> 2017
                           </a>
-                          <a class='toggle' href='javascript:void(0)'>
+                          <!-- <a class='toggle' href='javascript:void(0)'>
                           <span class='zippy toggle-open'>
                             &#9660;&#160;
                           </span>
-                          </a>
+                          </a> -->
                           <ul class='hierarchy'>
                             <li class='archivedate expanded'>
                               <span class='post-count badge' dir='ltr'>8</span>
                               <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Februari
                               </a>
-                              <a class='toggle' href='javascript:void(0)'>
+                              <!-- <a class='toggle' href='javascript:void(0)'>
                                 <span class='zippy toggle-open'>
                                   &#9660;&#160;
                                 </span>
-                              </a>
+                              </a> -->
                             
                               <ul class='posts'>
                                 <li class='text-muted'>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
@@ -277,13 +356,13 @@ echo &quot;ddddd&quot;;
                             <span class='post-count badge' dir='ltr'>12</span>
                             <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Maret
                             </a>
-                            <a class='toggle' href='javascript:void(0)'>
+                            <!-- <a class='toggle' href='javascript:void(0)'>
                               <span class='zippy toggle-open'>
                                 &#9660;&#160;
                               </span>
-                            </a>
+                            </a> -->
                             
-                            <ul class='posts'>
+                            <!-- <ul class='posts'>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
@@ -292,7 +371,7 @@ echo &quot;ddddd&quot;;
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
-                            </ul>
+                            </ul> -->
                            </li>
                           </ul>
                         </li>
@@ -301,23 +380,23 @@ echo &quot;ddddd&quot;;
                           <span class='post-count badge' dir='ltr'>8</span>
                           <a class='post-count-link' href='http://ip3web.blogspot.co.id/search?updated-min=2017-01-01T00:00:00-08:00&amp;updated-max=2018-01-01T00:00:00-08:00&amp;max-results=8'> 2016
                           </a>
-                          <a class='toggle' href='javascript:void(0)'>
+                          <!-- <a class='toggle' href='javascript:void(0)'>
                           <span class='zippy toggle-open'>
                             &#9660;&#160;
-                          </span>
+                          </span> -->
                           </a>
                           <ul class='hierarchy'>
                            <li class='archivedate expanded'>
                             <span class='post-count badge' dir='ltr'>3</span>
                             <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> November
                             </a>
-                            <a class='toggle' href='javascript:void(0)'>
+                            <!-- <a class='toggle' href='javascript:void(0)'>
                               <span class='zippy toggle-open'>
                                 &#9660;&#160;
                               </span>
-                            </a>
+                            </a> -->
                             
-                            <ul class='posts'>
+                            <!-- <ul class='posts'>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
@@ -326,7 +405,7 @@ echo &quot;ddddd&quot;;
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
-                            </ul>
+                            </ul> -->
                            </li>
                           </ul>
 
@@ -335,13 +414,13 @@ echo &quot;ddddd&quot;;
                             <span class='post-count badge' dir='ltr'>6</span>
                             <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Desember
                             </a>
-                            <a class='toggle' href='javascript:void(0)'>
+                            <!-- <a class='toggle' href='javascript:void(0)'>
                               <span class='zippy toggle-open'>
                                 &#9660;&#160;
                               </span>
-                            </a>
+                            </a> -->
                             
-                            <ul class='posts'>
+                            <!-- <ul class='posts'>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-title-post-6.html'>Blog Title Post 6  -Lorem ipsum dolor sit amet, co...</a></li>
@@ -350,7 +429,7 @@ echo &quot;ddddd&quot;;
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/minimalist-modern-bootstrap-blogger.html'>Blog Post Title 2 -on ullamco laboris nisi ut aliq...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-1.html'>Blog Post Title 1 -on ullamco laboris nisi ut aliq...</a></li>
                               <li>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-3.html'>Blog Post Title 3 -on ullamco laboris nisi ut aliq...</a></li>
-                            </ul>
+                            </ul> -->
                            </li>               
                           </ul>
                          </li>             
@@ -358,6 +437,7 @@ echo &quot;ddddd&quot;;
                       </div>
                     </div>
                    </div>
+                   <div class="gradasi"></div>
                   </div>
                 </div>
 
@@ -426,7 +506,7 @@ echo &quot;ddddd&quot;;
                           </a>
                         </h4>
                         <div class="media-body">
-                          <p class="hidden">Description XS PORTRAIT Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quae dignissimos animi nam doloremque, accu...
+                          <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic nihil eligendi iste autem excepturi, ullam repudiandae velit eaque eveniet ...
                           </p>
                           <a href="javascript:;">
                             Judul ALL Lorem ipsum dolor sit amet consecte
@@ -441,7 +521,10 @@ echo &quot;ddddd&quot;;
 
                       <div class="media text-right">
                         <div class="media-body">
-                          <a href="javascript:;">Quod illum architecto velit, repellendus dolor harum?</a>
+                          <p class="hidden text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ea veritatis dolores libero culpa reprehenderit ab cumque officiis, qu...</p>
+                          <a href="javascript:;">
+                            Judul ALL Lorem ipsum dolor sit amet consecte
+                          </a>
                         </div>
                         <div class="media-left media-middle">
                           <a href="javascript:;">
@@ -475,7 +558,6 @@ echo &quot;ddddd&quot;;
               </div>
              </div> <!-- /.row -->
            </aside>
-          </div>
         </div>
     </main>
     <footer>
@@ -486,22 +568,32 @@ echo &quot;ddddd&quot;;
           <span style="color:#4682B4">lorem</span><br />
           <span style="color:#A52A2A">lorem</span><br />
 
-           Copyleft &copy; 2017 Your Blog &middot; <a href="https://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design with <span class="hearts">&hearts;</span> by <a href="https://twitter.com/ox69xo" target="_blank">ox69xo</a><br />
+           Copyleft &copy; 2017 Your Blog &middot; <a href="https://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design <i class="sr-only">with <span class="hearts">&hearts;</span></i> by <a href="https://twitter.com/ox69xo" target="_blank">ox69xo</a><br />
            Powered by <a href="https://blogger.com" target="_blank">Blogger</a>
           </div>
-          <div class='col-xs-12 col-sm-2 col-md-5 col-lg-5 text-right'>ss</div>
+          <div class='col-xs-12 col-sm-2 col-md-5 col-lg-5 text-right'>
+            <a href="https://mmbbproject.github.io/" class="jqh-link" title="MMBB Template logo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.2333332 4.2333335"><g><path d="M4.206 4.122c-.52.068-1.072.127-1.603.062-.274-.02-.424-.238-.67-.077-.474.126-1.09.164-1.527-.03C.04 3.89.044 3.582.04 3.318v-.93h.548c.005.37-.013.743.01 1.114.01.166.105.375.423.414.314.038.663.006.923-.105-.145-.296-.08-.604-.094-.907v-.516h.547c.005.37-.012.743.01 1.114.014.166.113.374.43.414.27.033.55.005.82-.02V2.388h.55v1.735zM.04.126C.56.056 1.112-.002 1.643.063c.273.02.424.24.67.077.474-.126 1.09-.164 1.526.03.367.188.362.496.366.76v.93h-.548c-.005-.37.012-.743-.01-1.114-.01-.164-.105-.374-.424-.413-.312-.037-.66-.006-.92.105.144.295.078.604.093.906v.516H1.85c-.007-.37.01-.743-.013-1.114-.012-.164-.11-.373-.427-.413C1.14.3.858.328.588.353V1.86H.04V.126z"/></g></svg></a>
+          </div>
         </div>
       </div>
     </footer>
-    <!--<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>-->   
-    <!--<script type="text/javascript" src="../template/html/js/holder.min.js"></script>-->
+    <!-- <script type="text/javascript" src="../jquery-3.1.1.min.js"></script>   
+    <script type="text/javascript" src="../template/html/js/holder.min.js"></script> -->
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/> 
     <script src='https://cdn.rawgit.com/seujungkuku/own/ebc96cf0/holder.min.js' type='text/javascript'/>
-    <script type="text/javascript" src="../generic-syntax-highlighter-theme.js"></script>
+    <script type="text/javascript" src="../generic-syntax-highlighter-dev.js"></script>
 
     <script>
       GSH($('pre'));
-      var singkatpopular = 90, sidepostcolored = false, sidepostcoloredhover = true;
+      var JQH = {
+        "hmpage"  : "http://jqueryholic.blogspot.co.id/",
+        "cpage"  : "item",
+        "curl"  : "https://seujungkuku.github.io/jq/",
+        // "curl"  : "http://jqueryholic.blogspot.co.id/",
+        "hmtitle"  : 40,
+        "modeHP"  : true,
+        "sidecolored" : false
+      };
     </script>
     <script type="text/javascript" src="jq.js"></script>
   </body>

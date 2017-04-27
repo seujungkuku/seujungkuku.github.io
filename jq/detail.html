@@ -7,44 +7,58 @@
 
     <meta name="description" content="Minimalist Modern Bootstrap Blogger">
     <meta name="author" content="ox69xo">
-    <link href="../template/html/img/mmbb.icon.colored.ico" rel="icon" type="image/x-icon"/>
+    <link href="icon-precompressed/jqh-favicon-48.ico" rel="icon" type="image/x-icon"/>
     <title>Detail- jQueryHolic</title>
-    <!-- <link href="../../bootstrap.min.css" rel="stylesheet"/> -->
-    <!-- <link href="../mmbb-font/styles.css" rel="stylesheet"/> -->
+    <!-- <link href="../../bootstrap.min.css" rel="stylesheet"/>
+    <link href="../mmbb-font/styles.css" rel="stylesheet"/> -->
     <link href='https://cdn.rawgit.com/seujungkuku/own/4cf59d15/bootstrap.custom.mmbb.min.css' rel='stylesheet'/>
     <link href="https://file.myfontastic.com/TERSVkx8Xd5Gw4iiHmTfWY/icons.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
     <style>
-      .garis {border:1px solid #ddd}
+      /*.garis {border:1px solid #ddd}*/
     </style>
   </head>
 
   <body data-template="mmbbproject.github.io">
+    <header>
+      <div class="container">
+        <div class="jqh-m-brand">
+          <h3><a>jQueryHolic</a></h3>
+        </div>
+        <ul class="cssm">
+          <input type="checkbox" id="collapse">
+          <label for="collapse"></label>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Download</a></li>
+          <li>
+            <form action="/search" class="form-inline" method="get" role="search">
+              <div class="input-group">
+                <input class="form-control form-main-search" required="true" name="q" placeholder="Search" type="text"/>
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <span class="icon jqh-search"/>
+                  </button>
+                </div>
+              </div>
+            </form>            
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-9 garis" id="jqh-main">
            <div class="row" id="jqh-postdetail">
             <article>
+              <!-- col-sm-12 hanya jika pagetype == item, jika static-page maka beri class col-sm-offset-3 dan col-sm-9 -->
+              <!-- <div class="col-sm-9 col-md-9 col-sm-offset-3 col-md-offset-3 garis post-title"> -->
               <div class="col-sm-12 col-md-9 col-md-offset-3 garis post-title">
                 <div class="post-title-content">
                   <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi cupiditate delectus saepe eum</h3>
                 </div>
               </div>
               <div class="col-sm-3 col-md-3 col-lg-3 col-sidepost text-muted">
-                <time datetime="2017-29-05 18:19:00">
-                  <div class="post-date garis crandom">
-                    <div class="sr-only">Date published:</div>
-<!--                       <div class="date">
-                        <span class="hari">Min<br />ggu</span>
-                        <span class="bln">Mei</span>
-                        <span class="tgl">29</span>
-                        <span class="thn">2017</span>
-                      </div>  -->      
-                    <div class="date">selasa agustus 2, 2017</div>
-                  </div>
-                </time>
-
                 <div class="post-author crandom">
                   <span class="sr-only">Post Author: </span>
                   <div class="media">
@@ -52,7 +66,7 @@
                       <a href="javascript:;" rel="author" target="_blank" title="Author">Husein Chan Mandee</a>
                     </div>
                     <div class="media-left">
-                      <span class="icon jqh-user icon-sm"></span>
+                      <span class="icon jqh-user"></span>
                     </div>
                   </div>
                 </div>
@@ -60,11 +74,31 @@
                 <div class="post-tags text-right crandom">
                   <span class="sr-only">Post Tags: </span>
                   <div class="media">
-                    <div class="media-body text-right"><a>Tech</a>, <a>Programming</a>, <a>Mobile</a>, Lainnya, Lagi</div>
-                    <div class="media-left"><span class="icon jqh-tags icon-sm"></span></div>
+                    <div class="media-body text-right"><a>#Tech</a> <a>#Programming</a> <a>#Mobile</a> #Lainnya #Lagi</div>
+                    <div class="media-left"><i class="icon jqh-tags"></i></div>
                   </div>
                 </div>
 
+                <div class="sr-only">Date published:</div>
+                <time datetime="2017-29-05 18:19:00">
+                  <div class="post-date garis crandom">
+                      <!-- <div class="date"><span class="tgl">01</span><span class="bln">Agustus</span><span class="thn">2017</span></div> -->
+                      <!-- <div class="date">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="row">
+                            <div class="col-md-6 col-lg-6">
+                              <span class="bln">Mei</span>
+                              <span class="tgl">29</span>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                              <span class="thn">2017</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>   -->      
+                    <div class="date">Agustus 10, 2017</div>
+                  </div>
+                </time>
                 <ul class="jqh-sharepost crandom">
                   <li>
                     <a href="javascript:;" target="_blank">
@@ -73,12 +107,12 @@
                   </li>
                   <li>
                     <a href="javascript:;" target="_blank">
-                      <span class="icon jqh-googleplus-square"></span>
+                      <i class="icon jqh-googleplus-square icon-sm"></i>
                     </a>
                   </li>
                   <li>
                     <a href="javascript:;" target="_blank">
-                      <span class="icon jqh-facebook-square"></span>
+                      <span class="icon jqh-facebook-square icon-sm"></span>
                     </a>
                   </li>
                   <li>
@@ -92,65 +126,15 @@
                     </a>
                   </li>
                 </ul>
-                
-<!--                 <h4 class="post-terkait-title">Post terkait</h4>
-                <div class="post-terkait-list">
-                  <div class="post-terkait crandom">  
-                    <ul class="list-unstyled">
-                      <li>
-                        <a href="javascript:;">
-                          <img class="thumbnail pull-right" src="holder.js/100x80?auto=true&theme=sky"></img>
-                        </a>
-                        <div class="clearfix"></div>
-                        <a href="javascript:;" class="text-right">
-                          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="post-terkait crandom">  
-                    <ul class="list-unstyled">
-                      <li>
-                        <a href="javascript:;">
-                          <img class="thumbnail pull-right" src="holder.js/100x80?auto=true&theme=sky"></img>
-                        </a>
-                        <div class="clearfix"></div>
-                        <a href="javascript:;" class="text-right">
-                          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="post-terkait crandom">  
-                    <ul class="list-unstyled">
-                      <li>
-                        <a href="javascript:;">
-                          <img class="thumbnail pull-right" src="holder.js/100x80?auto=true&theme=sky"></img>
-                        </a>
-                        <div class="clearfix"></div>
-                        <a href="javascript:;" class="text-right">
-                          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="post-terkait crandom">  
-                    <ul class="list-unstyled">
-                      <li>
-                        <a href="javascript:;">
-                          <img class="thumbnail pull-right" src="holder.js/100x80?auto=true&theme=sky"></img>
-                        </a>
-                        <div class="clearfix"></div>
-                        <a href="javascript:;" class="text-right">
-                          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h5>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div> -->
 
-              </div>
+              </div> <!-- /side-postdetail -->
               <div class="col-sm-9 col-md-9 col-lg-9 garis post-detail">
+                <div class="post-body">
+                  <div class="status-msg-body text-center">
+                    Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a><br />
+                    <h2>Halaman tidak di temukan</h2>
+                  </div>                  
+                </div>
                 <div class="post-body">
                   <div class="para">
                     <h3>Judul</h3><h1>Lalu</h1>
@@ -214,19 +198,15 @@
                   <nav aria-label="Pager">
                     <ul class="detailpager">
                       <li class="previous text-left">
-                        <span>&larr; Prev</span><br />
-                        <a class="active" rel="prev" alt="nav previous page" title="nav previous page" href="javascript:;">
-                          quick provident at fugit. Neque, molestiae!
-                        </a>
+                        <a><span>&larr; Prev</span></a><br />
+                        <a class="active" rel="prev" alt="nav previous page" title="nav previous page" href="javascript:;">http://jqueryholic.blogspot.co.id/2017/04/quick-provident-at-fugit-neque-molestiae-jumps-over-the-lazy-dog.html?m=1</a>
                       </li>
                       <li class="next text-right">
-                        <span>Next &rarr;</span><br />
-                        <a title="nav next page" rel="next" alt="nav next page" href="javascript:;">
-                          Lorem ipsum dolor sit amet, consectetur adisuscipit.
-                        </a>
+                        <a><span>Next &rarr;</span></a><br />
+                        <a title="nav next page" rel="next" alt="nav next page" href="javascript:;">http://jqueryholic.blogspot.co.id/2017/04/lorem-ipsum-dolor-sit-amet-consectetur-adisuscipit-the-quick-brown-fox.html</a>
                       </li>
                     </ul>
-                  </nav>            
+                  </nav>
                 </div>
 
                 <div class="row post-terkait garis">
@@ -244,7 +224,7 @@
                   <div class="col-xs-6 col-sm-3 col-md-3 terkait">
                     <div class="thumbnail">
                       <a href="javascript:;">
-                        <img src="holder.js/140x130?auto=true"></img>
+                        <img src="holder.js/200x164?auto=true&theme=sky"></img>
                       </a>
                       <a href="javascript;:">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
@@ -255,7 +235,7 @@
                   <div class="col-xs-6 col-sm-3 col-md-3 terkait">
                     <div class="thumbnail">
                       <a href="javascript:;">
-                        <img src="holder.js/140x130?auto=true"></img>
+                        <img src="170x140_gray_fix_compress.png"></img>
                       </a>
                       <a href="javascript;:">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
@@ -265,7 +245,7 @@
                   <div class="col-xs-6 col-sm-3 col-md-3 terkait">
                     <div class="thumbnail">
                       <a href="javascript:;">
-                        <img src="holder.js/140x130?auto=true"></img>
+                        <img src="170x140_blue_fix_compress.png"></img>
                       </a>
                       <a href="javascript;:">
                         Lorem ipsum dolor sit amet, consectetur Nisi.
@@ -274,13 +254,15 @@
                   </div>
                 </div>
 
+                <div class="post-comment garis">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda omnis eius totam mollitia ullam deleniti impedit voluptas commodi voluptatibus doloribus est facere, amet adipisci, expedita nemo similique placeat, quas sed?
+                </div>
               </div>
             </article>
 
            </div> <!-- .row #jqh-home -->
           </div> <!-- .col jqh-home -->
-          <div class="col-sm-12 col-md-3 garis" id="jqh-sidebar">
-           <aside>
+          <aside class="col-sm-12 col-md-3 garis" id="jqh-sidebar">
              <div class="row">
               <div class="col-sm-6 col-md-12">
                 <div class="widget"> <!-- profile-->
@@ -301,7 +283,8 @@
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit saepe consequuntur dolorum vero repudiandae sunt,
                     </p>
-                    <ul class="jqh-sharegroup jqh-socialbrand">
+
+                    <!-- <ul class="jqh-sharegroup jqh-socialbrand">
                       <li>
                         <a href="javascript:;" class="i-twitter" target="_blank">
                           <span class="icon jqh-twitter icon-md"></span>
@@ -327,9 +310,10 @@
                           <span class="icon jqh-whatsapp icon-md"></span>
                         </a>
                       </li>
-                    </ul>
+                    </ul> -->
 
                   </div>
+                  <div class="gradasi"></div>
                  </div>
                 </div>
 
@@ -415,7 +399,7 @@
                   <div class="col-sm-12 col-md-12 jqh-archive">
                    <h4>Archive</h4>
                    <div class="widget-content text-muted">
-                    <div id='ArchiveList' class='scroll-y' style='padding-right:5px'>
+                    <div id='ArchiveList'>
                       <div id='BlogArchive1_ArchiveList'>
                        <ul class='hierarchy'>
                         <li class='archivedate expanded'>
@@ -537,6 +521,7 @@
                       </div>
                     </div>
                    </div>
+                   <div class="gradasi"></div>
                   </div>
                 </div>
 
@@ -605,7 +590,7 @@
                         </div>
                         <div class="media-left media-middle">
                           <a href="javascript:;">
-                            <img src="holder.js/100x80?auto=true&theme=lava" alt="">
+                            <img class="img-rounded" src="file:///D:/Docs/MMBB/development/jqueryholic/100x83_blue_fix_compress.png" alt=""/>
                           </a>
                         </div>
                       </div>
@@ -616,14 +601,22 @@
                         </div>
                         <div class="media-left media-middle">
                           <a href="javascript:;">
-                            <img src="holder.js/100x80?auto=true&theme=lava" alt="">
+                            <img class="img-rounded" src="file:///D:/Docs/MMBB/development/jqueryholic/100x83_gray_fix_compress.png" alt=""/>
                           </a>
                         </div>
                       </div>
 
                       <div class="media text-right">
+                        <h4 class="media-heading hidden">
+                          <a href="javascript:;">Judul XS PORTRAIT Lorem ipsum dolor sit amet consecte
+                          </a>
+                        </h4>
                         <div class="media-body">
                           <a href="javascript:;">Quod illum architecto velit, repellendus dolor harum?</a>
+                          <p class="hidden text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ea veritatis dolores libero culpa reprehenderit ab cumque officiis, qu...</p>
+                          <a href="javascript:;">
+                            Judul ALL Lorem ipsum dolor sit amet consecte
+                          </a>
                         </div>
                         <div class="media-left media-middle">
                           <a href="javascript:;">
@@ -645,28 +638,42 @@
                 </div>
               </div>
              </div> <!-- /.row -->
-           </aside>
-          </div>
+          </aside>
         </div>
     </main>
     <footer>
       <div class="container">
         <div class="row">
-          <div class='col-xs-12 col-sm-10 col-md-7 col-lg-7'>
+          <div class='col-sm-8 col-md-7'>
            Copyleft &copy; 2017 Your Blog &middot; <a href="https://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design with <span class="hearts">&hearts;</span> by <a href="https://twitter.com/ox69xo" target="_blank">ox69xo</a><br />
            Powered by <a href="https://blogger.com" target="_blank">Blogger</a>
           </div>
-          <div class='col-xs-12 col-sm-2 col-md-5 col-lg-5 text-right'>ss</div>
+          <div class='col-sm-4 col-md-5 text-right'>
+            <a href="https://mmbbproject.github.io/" class="jqh-link" title="MMBB Template logo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.2333332 4.2333335"><g><path d="M4.206 4.122c-.52.068-1.072.127-1.603.062-.274-.02-.424-.238-.67-.077-.474.126-1.09.164-1.527-.03C.04 3.89.044 3.582.04 3.318v-.93h.548c.005.37-.013.743.01 1.114.01.166.105.375.423.414.314.038.663.006.923-.105-.145-.296-.08-.604-.094-.907v-.516h.547c.005.37-.012.743.01 1.114.014.166.113.374.43.414.27.033.55.005.82-.02V2.388h.55v1.735zM.04.126C.56.056 1.112-.002 1.643.063c.273.02.424.24.67.077.474-.126 1.09-.164 1.526.03.367.188.362.496.366.76v.93h-.548c-.005-.37.012-.743-.01-1.114-.01-.164-.105-.374-.424-.413-.312-.037-.66-.006-.92.105.144.295.078.604.093.906v.516H1.85c-.007-.37.01-.743-.013-1.114-.012-.164-.11-.373-.427-.413C1.14.3.858.328.588.353V1.86H.04V.126z"/></g></svg></a>
+          </div>
         </div>
       </div>
     </footer>
-    <!--<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>-->   
-    <!--<script type="text/javascript" src="../template/html/js/holder.min.js"></script>-->
+    <!--<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>   
+    <script type="text/javascript" src="../template/html/js/holder.min.js"></script>-->
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/> 
     <script src='https://cdn.rawgit.com/seujungkuku/own/ebc96cf0/holder.min.js' type='text/javascript'/>
-    <script> 
-      var singkatpopular = 90, sidepostcolored = false, sidepostcoloredhover = true;
+    <script type="text/javascript" src="../generic-syntax-highlighter-theme.min.js"></script>
+
+    <script>
+      GSH($('pre'));
+      var JQH = {
+        "hmpage"  : "http://jqueryholic.blogspot.co.id/",
+        "cpage"  : "item",
+        "curl"  : "file:///D:/Docs/MMBB/development/jqueryholic/detail.html",
+        "hmtitle"  : 40,
+        "modeHP"  : false,
+        "sidecolored" : false
+      };
+      // var singkatpopular = 90, hmpage = '',sidepostcolored = false, sidepostcoloredhover = true;
     </script>
     <script type="text/javascript" src="jq.js"></script>
+    <!--<script>var myLazyLoad = new LazyLoad();</script>
+    <script type="text/javascript" src="../jquery.lazyload.js"></script>-->
   </body>
 </html>

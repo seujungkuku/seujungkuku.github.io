@@ -7,29 +7,71 @@
 
     <meta name="description" content="Minimalist Modern Bootstrap Blogger">
     <meta name="author" content="ox69xo">
-    <link href="../template/html/img/mmbb.icon.colored.ico" rel="icon" type="image/x-icon"/>
+    <link href="icon-precompressed/jqh-favicon-48.ico" rel="icon" type="image/x-icon"/>
     <title>Home - jQueryHolic</title>
-    <!-- <link href="../../bootstrap.min.css" rel="stylesheet"/> -->
-    <!-- <link href="../mmbb-font/styles.css" rel="stylesheet"/> -->
+    <!-- <link href="../../bootstrap.min.css" rel="stylesheet"/>
+    <link href="../mmbb-font/styles.css" rel="stylesheet"/> -->
     <link href='https://cdn.rawgit.com/seujungkuku/own/4cf59d15/bootstrap.custom.mmbb.min.css' rel='stylesheet'/>
     <link href="https://file.myfontastic.com/TERSVkx8Xd5Gw4iiHmTfWY/icons.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
     <style>
-      /*.garis {border:1px solid #ddd;}*/
+      /*.garis {border:1px solid red}*/
+      /*abbr{border-color:currentColor;}*/
     </style>
+    <script>
+
+    </script>
+
   </head>
 
-  <body data-template="mmbbproject.github.io">
+  <body data-template="mmbbproject.github.io" class="mobile">
+    <script type="text/javascript" src="postrelated.js"></script>
+    <header>
+      <div class="container">
+        <div class="jqh-m-brand">
+          <h3><a href="javascript:;">jQueryHolic the qfox </a></h3>
+        </div>
+        <ul class="cssm">
+          <input type="checkbox" id="collapse">
+          <label for="collapse"></label>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Download</a></li>
+          <li>
+            <form action="/search" class="form-inline" method="get" role="search">
+              <div class="input-group">
+                <input class="form-control form-main-search" required="true" name="q" placeholder="Search" type="text"/>
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit">
+                    <span class="icon jqh-search"/>
+                  </button>
+                </div>
+              </div>
+            </form>            
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-9 garis" id="jqh-main">
-           <div class="row" id="jqh-home">
+           <div class="row garis" id="jqh-home">
             <article>
+              <!-- <div class="col-sm-12 col-md-12 col-msg">
+                <div class="status-msg-body text-center">
+                  Tampilkan posting dengan label <b>label 3</b>. <a href="http://ip3web.blogspot.com/">Tampilkan semua posting</a><br />
+                  <h2>Halaman tidak di temukan</h2>
+                </div>                
+              </div> -->
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 1 satu - Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                <div>
+                  <meta content="x" name="d"/>
+                  <!-- <a href="javascript:;" title="jQueryholic"><jqh-img src="file:///D:/Docs/MMBB/development/dfdf/240x200_gray_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_gray_fix_compress.png"/></noscript></jqh-img></a> -->
+                  <a href="javascript:;" title="jQueryholic"><jqh-img src="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/development/rerer/240x200_demo_fix_width_lg.png" alt=""><noscript><img src="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/development/jdfic/240x200_gray_fix_compress.png"/></noscript></jqh-img></a>
+                </div>
+                <!-- penting! judul post harus rapat, untuk js persingkat -->
+                <div class="home-title"><a href="javascript:;" title="judul">1 satu ss- Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisici</a></div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
@@ -37,20 +79,25 @@
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">05 February, 2017</div>
+                   <div class="media-body">05 February, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///G:/LINUXAREA/Documents/PostBlog/TemplateBloggerBasedBootstrap/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
@@ -60,184 +107,223 @@
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
                    <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;">3 tiga - Lorem Lorem ipsum dolor sit amet, consectetur adipisici ipsum dolor sit amet, consectetur adipisici</a>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Iqbal M. Salman</a></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">30 Agustus, 2017</div>
+                   <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 4 empat - Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Haris Fadilah Siregar</a></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">29 Mei, 2017</div>
+                   <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 5 lima - Lorem ipsum dolsdfs sdf sdf  sd asd asdf sad asd fdsor sdf sd  sit amet, consectetur adipisici</a>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Indra Presetyo</a></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">20 Juli, 2017</div>
+                   <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 6 enam - Lorem ipsum dolor sit amet, consectetur adipisici</a>
-                <div class="thumbnail-footer text-muted">
-                 <div class="media">
-                   <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Husein Chan Mandee</a></div>
-                 </div>
-                 <div class="media">
-                   <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">02 Maret, 2017</div>
-                 </div>
-                 <div class="media">
-                   <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
-                   <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
                 </div>
-               </div>
-              </div>
-              <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
-               <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 7 tujuh - Lorem ipsfd sdfum do sd fd lor sit amet, consectetur adipisici</a>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Indra Presetyo</a></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">20 Juli, 2017</div>
+                   <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="200x180.png" alt=""></img></a>
-                <a href="javascript:;"> 8 delapan - Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetur adipisici</a>
-                <div class="thumbnail-footer text-muted">
-                 <div class="media">
-                   <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Husein Chan Mandee</a></div>
-                 </div>
-                 <div class="media">
-                   <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">02 Maret, 2017</div>
-                 </div>
-                 <div class="media">
-                   <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
-                   <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
                 </div>
-               </div>
-              </div> 
-
-              <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
-               <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 9 sembilan - Lorem Lorem ipsum dolor sit amet, consectetur adipisici ipsum dolor sisdf t amet,  sdf sdfconsectetur adipisici</a>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Iqbal M. Salman</a></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">30 Agustus, 2017</div>
+                   <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
-                 </div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
               <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
                <div class="thumbnail">
-                <a href="javascript:;"><img src="holder.js/200x180?auto=true&theme=social" alt=""></img></a>
-                <a href="javascript:;"> 10 sepuluh - Lorem Lorem ipsum dolor sit amet, consectetur adipisici ipsum dolor sisdf t amet,  sdf sdfconsectetur adipisici</a>
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
                 <div class="thumbnail-footer text-muted">
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-user"></i></div>
-                   <div class="media-body"><a>Iqbal M. Salman</a></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
                  <div class="media">
                    <div class="media-left"><i class="icon jqh-calendar"></i></div>
-                   <div class="media-body ">30 Agustus, 2017</div>
+                   <div class="media-body ">10 Desember, 2017</div>
                  </div>
-                 <div class="media">
+                 <!-- <div class="media">
                    <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
                    <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
+                 </div> -->
+                </div>
+               </div>
+              </div>
+
+              <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
+               <div class="thumbnail">
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
+                <div class="thumbnail-footer text-muted">
+                 <div class="media">
+                   <div class="media-left"><i class="icon jqh-user"></i></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
                  </div>
+                 <div class="media">
+                   <div class="media-left"><i class="icon jqh-calendar"></i></div>
+                   <div class="media-body ">10 Desember, 2017</div>
+                 </div>
+                 <!-- <div class="media">
+                   <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
+                   <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
+                 </div> -->
+                </div>
+               </div>
+              </div>
+
+              <div class="col-xs-6 col-sm-3 col-md-3 garis col-home">
+               <div class="thumbnail">
+                <div>
+                  <a href="javascript:;" title="post-2"><jqh-img src="file:///D:/Docs/MMBB/development/rerer/240x200_blue_fix_compress.png" alt=""><noscript><img src="file:///D:/Docs/MMBB/development/jqueryholic/240x200_blue_fix_compress.png"/></noscript></jqh-img></a>
+                  <!-- <a href="javascript:;"><img src="240x200_gray_fix_compress.png" alt=""></img></a> -->
+                </div>
+                <div class="home-title">
+                  <a href="javascript:;"> 2 dua -Lorem ipsum dolor sit amet, consectetur adipisici</a>
+                </div>
+                <div class="thumbnail-footer text-muted">
+                 <div class="media">
+                   <div class="media-left"><i class="icon jqh-user"></i></div>
+                   <div class="media-body"><a>Mungki Ariwibowo</a></div>
+                 </div>
+                 <div class="media">
+                   <div class="media-left"><i class="icon jqh-calendar"></i></div>
+                   <div class="media-body ">10 Desember, 2017</div>
+                 </div>
+                 <!-- <div class="media">
+                   <div class="media-left"><i class="icon jqh-tags"><span class="sr-only">Tags</span></i></div>
+                   <div class="media-body"><a>Tech</a>, <a>Programming</a>, <a>Web</a></div>
+                 </div> -->
                 </div>
                </div>
               </div>
 
           
-
-
             <div class="clearfix"></div>
             </article> 
             <div class="jqh-pager">
@@ -266,21 +352,61 @@
            </div> <!-- .row #jqh-home -->
           </div> <!-- .col jqh-home -->
 
-          <div class="col-sm-12 col-md-3 garis" id="jqh-sidebar">
-           <aside>
+          <aside class="col-md-3 garis" id="jqh-sidebar">
              <div class="row">
               <div class="col-sm-6 col-md-12">
                 <div class="widget"> <!-- profile-->
                  <div class="col-sm-12 col-md-12 jqh-profile text-center">
                   <div class="widget-content">
-                    <img src="holder.js/100x100?auto=true&theme=sky" class="img-circle"></img>
-                    <a href="javascript:;" class="mmbb-logo big"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.2333332 4.2333335"><g><path d="M4.206 4.122c-.52.068-1.072.127-1.603.062-.274-.02-.424-.238-.67-.077-.474.126-1.09.164-1.527-.03C.04 3.89.044 3.582.04 3.318v-.93h.548c.005.37-.013.743.01 1.114.01.166.105.375.423.414.314.038.663.006.923-.105-.145-.296-.08-.604-.094-.907v-.516h.547c.005.37-.012.743.01 1.114.014.166.113.374.43.414.27.033.55.005.82-.02V2.388h.55v1.735zM.04.126C.56.056 1.112-.002 1.643.063c.273.02.424.24.67.077.474-.126 1.09-.164 1.526.03.367.188.362.496.366.76v.93h-.548c-.005-.37.012-.743-.01-1.114-.01-.164-.105-.374-.424-.413-.312-.037-.66-.006-.92.105.144.295.078.604.093.906v.516H1.85c-.007-.37.01-.743-.013-1.114-.012-.164-.11-.373-.427-.413C1.14.3.858.328.588.353V1.86H.04V.126z"/></g></svg></a>
+                    <div class="col-sm-12 profile-brand">
+                      <div class="col-xs-6 col-sm-6 col-md-6 garis">
+                        <a href="javascript:;">
+                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="96px" height="96px" viewBox="0 0 79.1006 79.1006" xmlns:xlink="http://www.w3.org/1999/xlink">
+                             <defs>
+                              <style type="text/css">
+                               <![CDATA[
+                                /*.fil0 {fill:none}*/
+                                /*.fil1 {fill:red !important;fill-rule:nonzero}*/
+                               ]]>
+                              </style>
+                             </defs>
+                           <g id="Layer_x0020_1">
+                            <path class="fil0" d="M3.16383 -0.000486593l72.773 0c1.74103,0 3.16432,1.32597 3.16432,2.94827l0 73.205c0,1.6223 -1.42329,2.94827 -3.16432,2.94827l-72.773 0c-1.74103,0 -3.16432,-1.32597 -3.16432,-2.94827l0 -73.205c0,-1.6223 1.42329,-2.94827 3.16432,-2.94827z"/>
+                            <path class="fil1" d="M50.5395 59.4135l0.0394141 2.74244 -0.000973187 4.77883 -7.38649 -0.0243297 -0.046713 0.0136246 0.00340615 -26.9612 -1.95124 2.16777c-4.73699,4.46985 -10.3674,6.69698 -16.8867,6.69698 -5.94812,0 -11.3079,-2.01352 -16.0795,-6.02597 -4.77348,-4.02705 -7.15876,-9.59416 -7.15876,-16.7184 0,-6.74272 2.21838,-12.158 6.63616,-16.2765 4.43676,-4.10247 9.94889,-6.16173 16.552,-6.16173 6.61864,0 16.2128,3.42318 18.8667,10.2316l-0.000973187 -9.5601 15.4459 0 0 7.5495 -8.0322 0 0 47.5475zm-9.20829 -32.8416c0,-4.65281 -1.56099,-8.37476 -4.68687,-11.1965 -3.14242,-2.80716 -6.77338,-4.22606 -10.9055,-4.22606 -4.01488,0 -8.63898,0.905064 -11.6126,3.55894 -2.97309,2.65388 -5.00461,7.00402 -5.1248,11.4038 -0.115809,4.20027 2.05294,8.12854 5.15838,11.0705 2.90058,2.74633 7.1101,3.91124 11.9663,3.91124 4.88832,0 8.65358,-1.48022 11.2729,-4.46985 2.62225,-2.97455 3.93216,-6.33058 3.93216,-10.052z"/>
+                            <path class="fil1" d="M57.1879 23.319c3.13658,0.163495 5.73012,0.583912 7.76408,1.7532 2.04904,1.16928 3.42708,2.71276 4.16621,4.63042 0.739622,1.91912 1.10992,4.72093 1.10992,8.40833l0 21.4748 8.1154 0 0 7.41812 -15.6231 0 0.0330883 -27.8555c0.00340615,-3.22222 -0.0510923,-4.22898 -0.151331,-5.52332 -0.0749354,-0.975133 -0.695342,-1.90015 -1.10943,-2.20183 -1.00384,-0.729403 -5.11118,-0.807258 -6.5223,-0.807258 -14.899,0 -18.5431,-8.38108 2.21741,-7.29695z"/>
+                            <path class="fil1" d="M28.765 20.6335c0.1343,-0.0272492 0.320178,-0.0535253 0.588291,-0.0798013l2.80667 0c0.352294,0 0.538172,0.132353 0.538172,0.384409l0 32.5857c0,5.54862 -0.907497,9.84914 -2.70546,12.8753 -2.55413,4.27375 -7.51154,7.56507 -14.8718,9.87541 -0.217994,0 -0.385869,-0.106564 -0.48708,-0.306067l-1.2267 -1.67242c-0.200963,-0.265193 -0.200963,-0.46421 0,-0.623326 3.20908,-1.60673 5.44449,-3.01299 6.68774,-4.20757 1.96584,-1.91134 3.27672,-4.39345 3.89859,-7.42055 0.352294,-1.73811 0.537199,-4.446 0.537199,-8.1227l0 -28.0453c0,-0.253029 -0.184905,-0.385869 -0.537199,-0.385869l-7.24246 -0.663227c-0.335749,0 -0.48708,-0.132353 -0.48708,-0.384409l0 -1.83251c0.100238,-0.252055 0.217994,-0.384409 0.385869,-0.384409l12.1152 -1.59262z"/>
+                           </g>
+                          </svg>
+                        </a>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 garis">
+                        <a href="https://mmbbproject.github.io/" class="jqh-link" title="MMBB Template logo" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="96" height="96" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 183.978 183.978" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                           <g id="Layer_x0020_1">
+                            <rect class="fil0" x="0.000267783" y="0.000269012" width="183.978" height="183.978"/>
+                            <g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+                             <g id="g6492">
+                              <g id="flowRoot6463" aria-label="m">
+                               <path id="path6483" class="fil1" d="M181.953 178.618c-22.5547,2.95388 -46.351,5.48222 -69.3064,2.68566 -11.8325,-0.806941 -18.3367,-10.2763 -28.9842,-3.31491 -20.4836,5.44035 -47.0946,7.06215 -65.9938,-1.25851 -15.8955,-8.14298 -15.685,-21.4388 -15.8615,-32.7779 0,-13.3853 0,-26.7705 0,-40.1558 7.89965,0 15.7982,0 23.6967,0 0.241064,16.0211 -0.53532,32.0581 0.497972,48.0679 0.415354,7.08818 4.48854,16.1071 18.2507,17.8206 13.529,1.60143 28.5915,0.254645 39.8559,-4.54852 -6.27558,-12.7006 -3.42016,-26.0236 -4.07658,-39.0512 0,-7.42997 0,-14.8588 0,-22.2888 7.89852,0 15.7982,0 23.6967,0 0.241064,16.0211 -0.53532,32.0581 0.496841,48.0679 0.539847,7.08592 4.80656,16.0641 18.4702,17.8206 11.7295,1.39659 23.8823,0.217297 35.5597,-0.844289 0,-21.681 0,-43.3621 0,-65.0442 7.89965,0 15.7982,0 23.6967,0 0,24.9416 0,49.8821 0,74.8226l0.00113176 -0.00113176z" inkscape:connector-curvature="0"/>
+                              </g>
+                              <g id="flowRoot6474" aria-label="m">
+                               <path id="path6480" class="fil1" d="M1.80741 6.27671c22.5547,-2.95388 46.351,-5.48222 69.3064,-2.68566 11.8325,0.806941 18.3367,10.2763 28.9842,3.31491 20.4836,-5.44035 47.0946,-7.06215 65.9938,1.25851 15.8955,8.14298 15.685,21.4388 15.8615,32.7779 0,13.3853 0,26.7705 0,40.1558 -7.89965,0 -15.7982,0 -23.6967,0 -0.241064,-16.0211 0.53532,-32.0581 -0.497972,-48.0679 -0.415354,-7.08818 -4.48854,-16.1071 -18.2507,-17.8206 -13.529,-1.60143 -28.5915,-0.254645 -39.8559,4.54852 6.27558,12.7006 3.42016,26.0236 4.07658,39.0512 0,7.42997 0,14.8588 0,22.2888 -7.89852,0 -15.7982,0 -23.6967,0 -0.241064,-16.0211 0.53532,-32.0581 -0.496841,-48.0679 -0.539847,-7.08592 -4.80656,-16.0641 -18.4702,-17.8206 -11.7295,-1.39659 -23.8823,-0.217297 -35.5597,0.844289 0,21.681 0,43.3621 0,65.0442 -7.89965,0 -15.7982,0 -23.6967,0 0,-24.9416 0,-49.8821 0,-74.8226l-0.00113176 0.00113176z" inkscape:connector-curvature="0"/>
+                              </g>
+                             </g>
+                            </g>
+                           </g>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
                     <form action="/search" target="_top" method="get" role="search">
                       <div class="input-group">
                         <input class="form-control form-main-search" required="true" name="q" placeholder="Search" type="text"/>
                         <div class="input-group-btn">
                           <button class="btn btn-default" type="submit">
-                            <span class="icon jqh-search icon-sm"/>
+                            <i aria-hidden="true" class="icon jqh-search"></i>
                           </button>
                         </div>
                       </div>
@@ -288,38 +414,11 @@
                     <div class="jqh-brand">
                       <h2>jQueryHolic</h2>
                     </div>
-                    <p>
+                    <p class="text-muted">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit saepe consequuntur dolorum vero repudiandae sunt,
                     </p>
-                    <ul class="jqh-sharegroup jqh-socialbrand">
-                      <li>
-                        <a href="javascript:;" class="i-twitter" target="_blank">
-                          <span class="icon jqh-twitter icon-md"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="i-googleplus" target="_blank">
-                          <span class="icon jqh-googleplus icon-md"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class='i-facebook' target="_blank">
-                          <span class="icon jqh-facebook icon-md"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="i-instagram" target="_blank">
-                          <span class="icon jqh-instagram icon-md"></span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="javascript:;" class="i-whatsapp" target="_blank">
-                          <span class="icon jqh-whatsapp icon-md"></span>
-                        </a>
-                      </li>
-                    </ul>
-
                   </div>
+                  <div class="gradasi"></div>
                  </div>
                 </div>
 
@@ -337,7 +436,7 @@
                           </div>
                         </div>
                       </a>
-                      <a class="list-group-item unduh active sidelist" href="javascript:;">
+                      <a class="list-group-item unduh sidelist" href="javascript:;">
                         <div class="media">
                           <div class="media-body media-middle">
                             Download
@@ -383,9 +482,7 @@
                             <a href="" title="Daftar lengkap Warna Social Brand populer" download="" rel="follow" target="">Warna Social Brand popular</a>
                             <div class="gradasi"></div>
                           </li>
-                          <li class="text-center">
-                            <a href="javascript:;" class="btn btn-default"> More ... <span class="icon jqh-angle-right icon-sm"></span></a>
-                          </li>
+                          <li class="text-center"><a href="javascript:;" class="btn btn-default"> More ... <span class="icon jqh-angle-right icon-sm"></span></a></li>
                         </ul>
                       </div>
                       <a class="list-group-item" href="javascript:;">
@@ -397,7 +494,7 @@
                             <div class="icon jqh-user icon-md"></div>
                           </div>
                         </div>
-                      </a>
+                      </a>                    
                      </div>
                     </div>
                   </div>
@@ -407,29 +504,20 @@
                   <div class="col-sm-12 col-md-12 jqh-archive">
                    <h4>Archive</h4>
                    <div class="widget-content text-muted">
-                    <div id='ArchiveList' class='scroll-y' style='padding-right:5px'>
+                    <div id='ArchiveList'>
                       <div id='BlogArchive1_ArchiveList'>
                        <ul class='hierarchy'>
                         <li class='archivedate expanded'>
                           <span class='post-count badge' dir='ltr'>8</span>
                           <a class='post-count-link' href='http://ip3web.blogspot.co.id/search?updated-min=2017-01-01T00:00:00-08:00&amp;updated-max=2018-01-01T00:00:00-08:00&amp;max-results=8'> 2017
                           </a>
-                          <a class='toggle' href='javascript:void(0)'>
-                          <span class='zippy toggle-open'>
-                            &#9660;&#160;
-                          </span>
-                          </a>
+    
                           <ul class='hierarchy'>
                             <li class='archivedate expanded'>
                               <span class='post-count badge' dir='ltr'>8</span>
                               <a class='post-count-link' href='http://ip3web.blogspot.co.id/2017_02_01_archive.html'> Februari
                               </a>
-                              <a class='toggle' href='javascript:void(0)'>
-                                <span class='zippy toggle-open'>
-                                  &#9660;&#160;
-                                </span>
-                              </a>
-                            
+
                               <ul class='posts'>
                                 <li class='text-muted'>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-8.html'>Blog Post Title 8 -Lorem ipsum dolor sit amet, con...</a></li>
                                 <li class='text-muted'>&bull; <a href='http://ip3web.blogspot.co.id/2017/02/blog-post-title-7.html'>Contoh Post tidak di ijinkan komentar</a></li>
@@ -529,6 +617,7 @@
                       </div>
                     </div>
                    </div>
+                   <div class="gradasi"></div>
                   </div>
                 </div>
 
@@ -593,34 +682,43 @@
                     <h4>Popular Post</h4>
                     <div class="widget-content">
                       <div class="media text-right">
+                        <h4 class="media-heading hidden garis">
+                          <a href="javascript:;">Judul XS PORTRAIT Lorem ipsum dolor sit amet consecte
+                          </a>
+                        </h4>
                         <div class="media-body">
                           <a href="javascript:;">Quod illum architecto velit, repellendus dolor harum? lorem</a>
+                          <p class="hidden">
+                            voluptatem debitis quis ab accusantium incidunt, excepturi temporibus vitae nisi, exercitationem.
+                          </p>
                         </div>
                         <div class="media-left media-middle">
                           <a href="javascript:;">
-                            <img src="holder.js/100x80?auto=true&theme=lava" alt="">
+                            <img src="holder.js/75x75?auto=true&theme=lava" alt="">
                           </a>
                         </div>
                       </div>
 
                       <div class="media text-right">
-                        <div class="media-body">
+                        <div class="media-body garis">
                           <a href="javascript:;">Quod illum architecto velit, repellendus dolor harum?</a>
                         </div>
-                        <div class="media-left media-middle">
+                        <div class="media-left media-middle garis">
                           <a href="javascript:;">
-                            <img src="holder.js/100x80?auto=true&theme=lava" alt="">
+                            <img src="file:///D:/Docs/MMBB/development/jqueryholic/75x75_blue_fix_compress.png" alt="">
+                            </img>
                           </a>
                         </div>
                       </div>
 
                       <div class="media text-right">
-                        <div class="media-body">
+                        <div class="media-body garis">
                           <a href="javascript:;">Quod illum architecto velit, repellendus dolor harum?</a>
                         </div>
-                        <div class="media-left media-middle">
+                        <div class="media-left media-middle garis">
                           <a href="javascript:;">
-                            <img src="holder.js/100x80?auto=true&theme=lava" alt="">
+                            <img src="file:///D:/Docs/MMBB/development/jqueryholic/75x75_gray_fix_compress.png" alt="">
+                            </img>
                           </a>
                         </div>
                       </div>
@@ -638,27 +736,81 @@
                 </div>
               </div>
              </div> <!-- /.row -->
-           </aside>
-          </div>
+          </aside>
         </div>
 
     </main>
     <footer>
       <div class="container">
         <div class="row">
-          <div class='col-xs-12 col-sm-10 col-md-7 col-lg-7'>
-           Copyleft &copy; 2017 Your Blog &middot; <a href="https://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design with <span class="hearts">&hearts;</span> by <a href="https://twitter.com/ox69xo" target="_blank">ox69xo</a><br />
-           Powered by <a href="https://blogger.com" target="_blank">Blogger</a>
+          <div class='col-sm-8 col-md-7'>
+           Copyleft &copy; 2017 Your Blog &middot; <a href="https://mmbbproject.github.io/" target="_blank">MMBB Template</a> Design with <span class="hearts">&hearts;</span> & passion in Indonesia by <a href="https://twitter.com/ox69xo" target="_blank">ox69xo</a> &middot; Powered by <a href="https://blogger.com" target="_blank">Blogger</a>
           </div>
-          <div class='col-xs-12 col-sm-2 col-md-5 col-lg-5 text-right'>ss</div>
+          <div class='col-sm-4 col-md-5 text-right'>
+            <a href="https://mmbbproject.github.io/" class="jqh-link" title="MMBB Template logo" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 4.2333332 4.2333335"><g><path d="M4.206 4.122c-.52.068-1.072.127-1.603.062-.274-.02-.424-.238-.67-.077-.474.126-1.09.164-1.527-.03C.04 3.89.044 3.582.04 3.318v-.93h.548c.005.37-.013.743.01 1.114.01.166.105.375.423.414.314.038.663.006.923-.105-.145-.296-.08-.604-.094-.907v-.516h.547c.005.37-.012.743.01 1.114.014.166.113.374.43.414.27.033.55.005.82-.02V2.388h.55v1.735zM.04.126C.56.056 1.112-.002 1.643.063c.273.02.424.24.67.077.474-.126 1.09-.164 1.526.03.367.188.362.496.366.76v.93h-.548c-.005-.37.012-.743-.01-1.114-.01-.164-.105-.374-.424-.413-.312-.037-.66-.006-.92.105.144.295.078.604.093.906v.516H1.85c-.007-.37.01-.743-.013-1.114-.012-.164-.11-.373-.427-.413C1.14.3.858.328.588.353V1.86H.04V.126z"/></g></svg></a>
+
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16px" height="16px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 79.1006 79.1006"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil1 {fill:#CCCCCC;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <path class="fil0" d="M3.16383 -0.000486593l72.773 0c1.74103,0 3.16432,1.32597 3.16432,2.94827l0 73.205c0,1.6223 -1.42329,2.94827 -3.16432,2.94827l-72.773 0c-1.74103,0 -3.16432,-1.32597 -3.16432,-2.94827l0 -73.205c0,-1.6223 1.42329,-2.94827 3.16432,-2.94827z"/>
+  <path class="fil1" d="M50.5395 59.4135l0.0394141 2.74244 -0.000973187 4.77883 -7.38649 -0.0243297 -0.046713 0.0136246 0.00340615 -26.9612 -1.95124 2.16777c-4.73699,4.46985 -10.3674,6.69698 -16.8867,6.69698 -5.94812,0 -11.3079,-2.01352 -16.0795,-6.02597 -4.77348,-4.02705 -7.15876,-9.59416 -7.15876,-16.7184 0,-6.74272 2.21838,-12.158 6.63616,-16.2765 4.43676,-4.10247 9.94889,-6.16173 16.552,-6.16173 6.61864,0 16.2128,3.42318 18.8667,10.2316l-0.000973187 -9.5601 15.4459 0 0 7.5495 -8.0322 0 0 47.5475zm-9.20829 -32.8416c0,-4.65281 -1.56099,-8.37476 -4.68687,-11.1965 -3.14242,-2.80716 -6.77338,-4.22606 -10.9055,-4.22606 -4.01488,0 -8.63898,0.905064 -11.6126,3.55894 -2.97309,2.65388 -5.00461,7.00402 -5.1248,11.4038 -0.115809,4.20027 2.05294,8.12854 5.15838,11.0705 2.90058,2.74633 7.1101,3.91124 11.9663,3.91124 4.88832,0 8.65358,-1.48022 11.2729,-4.46985 2.62225,-2.97455 3.93216,-6.33058 3.93216,-10.052z"/>
+  <path class="fil1" d="M57.1879 23.319c3.13658,0.163495 5.73012,0.583912 7.76408,1.7532 2.04904,1.16928 3.42708,2.71276 4.16621,4.63042 0.739622,1.91912 1.10992,4.72093 1.10992,8.40833l0 21.4748 8.1154 0 0 7.41812 -15.6231 0 0.0330883 -27.8555c0.00340615,-3.22222 -0.0510923,-4.22898 -0.151331,-5.52332 -0.0749354,-0.975133 -0.695342,-1.90015 -1.10943,-2.20183 -1.00384,-0.729403 -5.11118,-0.807258 -6.5223,-0.807258 -14.899,0 -18.5431,-8.38108 2.21741,-7.29695z"/>
+  <path class="fil1" d="M28.765 20.6335c0.1343,-0.0272492 0.320178,-0.0535253 0.588291,-0.0798013l2.80667 0c0.352294,0 0.538172,0.132353 0.538172,0.384409l0 32.5857c0,5.54862 -0.907497,9.84914 -2.70546,12.8753 -2.55413,4.27375 -7.51154,7.56507 -14.8718,9.87541 -0.217994,0 -0.385869,-0.106564 -0.48708,-0.306067l-1.2267 -1.67242c-0.200963,-0.265193 -0.200963,-0.46421 0,-0.623326 3.20908,-1.60673 5.44449,-3.01299 6.68774,-4.20757 1.96584,-1.91134 3.27672,-4.39345 3.89859,-7.42055 0.352294,-1.73811 0.537199,-4.446 0.537199,-8.1227l0 -28.0453c0,-0.253029 -0.184905,-0.385869 -0.537199,-0.385869l-7.24246 -0.663227c-0.335749,0 -0.48708,-0.132353 -0.48708,-0.384409l0 -1.83251c0.100238,-0.252055 0.217994,-0.384409 0.385869,-0.384409l12.1152 -1.59262z"/>
+ </g>
+</svg>
+
+          </div>
         </div>
       </div>
     </footer>
-    <!--<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>-->   
-    <!--<script type="text/javascript" src="../template/html/js/holder.min.js"></script>-->
+    <!--<script type="text/javascript" src="../jquery-3.1.1.min.js"></script>   
+    <script type="text/javascript" src="../template/html/js/holder.min.js"></script>-->
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' type='text/javascript'/> 
     <script src='https://cdn.rawgit.com/seujungkuku/own/ebc96cf0/holder.min.js' type='text/javascript'/>
-    <script>var singkatjudul = 40, singkattag = 17;</script>
+    <script>
+    // var singkatjudul = 40, singkattag = 17; dicoba = 2;
+
+      // GSH($('pre'));
+      var JQH = {
+        "hmpage"  : "http://jqueryholic.blogspot.co.id/",
+        "cpage"  : "index",
+        "curl"  : "https://seujungkuku.github.io/jq/",
+        // "curl"  : "file:///D:/Docs/MMBB/development/jqueryholic/home.html",
+        "hmtitle"  : 40,
+        "modeHP"  : false,
+        "related" : 6,
+        "pg" : {
+            "p" : 16,
+            "sh" : 3,
+            "pr"  : "&laquo;",
+            "nx"  : "&raquo;",
+            "ac" : "http://jqueryholic.blogspot.co.id/",
+            "hm"  : "http://jqueryholic.blogspot.co.id/"
+          },
+        "sidecolored" : false
+      };
+
+      // jqhdata["itempg"] ? alert(jqhdata["singkatjudul"]):"";
+      // var singkatjudul = 40, hmpage = '',sidepostcolored = false, sidepostcoloredhover = false; itempg = false;
+    </script>
+
     <script type="text/javascript" src="jq.js"></script>
+    <script type="text/javascript">
+      // if(JQH['cpage'] == 'index'){
+        // hmshort(JQH["hmtitle"]);
+        // alert(JQH["hmtitle"]);
+      // }
+      // coba();
+
+    </script>
   </body>
 </html>

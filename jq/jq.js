@@ -48,7 +48,8 @@ $(function () {
 			return window.matchMedia("(max-width:767px)").matches ? true:false}
 		function cropthumb(x,y){
 		  var a=x.attr('src').split('/');
-		  a.splice(7,1),a.splice(7,0,y);
+		  // a.splice(7,1),a.splice(7,0,y);
+		  a.splice(4,1),a.splice(4,0,y);
 		  return "<img src='"+a.toString().replace(/,/g,'/')+"' alt='"+x.attr
 		  ('alt')+"'></img>";
 		}
@@ -114,7 +115,8 @@ $(function () {
 					// alert(y);
 					// y.join("/ ");
 					// z=y.toString();
-					x.length ? x.closest('a').html(cropthumb(x,'jqueryholic')):'';
+					x.length ? x.closest('a').html(cropthumb(x,'jq')):'';
+					// x.length ? x.closest('a').html(cropthumb(x,'jqueryholic')):'';
 					// alert(z.replace(/,/g,'/'));
 					// alert(y.toString());
 					// setTimeout(x.attr('src',x.attr('data-gambar'),2000));

@@ -125,8 +125,8 @@ footer,
 .col-home .icon,
 .m-postattr .icon,
 .col-sidepost .icon,
-.col-home a:hover .jqh-bars,
-.col-home a:focus .jqh-bars,
+.col-home a:hover .jqh-bars,/*
+.col-home a:focus .jqh-bars,*/
 .col-home .jqh-bars.active {color:#aaa}
 #jqh-home .thumbnail {
   margin-bottom:0;
@@ -820,9 +820,10 @@ footer {padding:20px 0;margin-top:15px;background:#fff;
   #jqh-home .sharemobile {
     background-color:#f8f8f8;
     border-top:1px solid #ddd;
-    margin:5px -8px -4px -8px;
+    /*margin:5px -8px -4px -8px;*/
+    margin:3px -8px -2px -8px;
     /*margin top 7px menyesuaikan dengan garis border thumbnail bottom*/
-    padding:8px 0 6px 8px;
+    padding:6px 0 6px 8px;
     border-radius:0 0 4px 4px;
   }
   #jqh-home .sharemobile li a {width:18.444444%}
@@ -848,7 +849,8 @@ footer {padding:20px 0;margin-top:15px;background:#fff;
   .col-home .thumbnail {width: 100%}
 
   /*#jqh-home .col-home .thumbnail {padding:8px}*/
-  #jqh-home .thumbnail-footer {margin:6px 0 0;padding:6px 8px 4px 8px}
+  /*#jqh-home .thumbnail-footer {margin:6px 0 0;padding:6px 8px 4px 8px}*/
+  #jqh-home .thumbnail-footer {margin:6px 0 0;padding:6px 8px 2px 8px}
   #jqh-home .home-title {padding:2px 8px 0 8px}
 /*#jqh-home article .col-home:nth-child(2n+3){display: block;clear:both}*/
   #jqh-home .col-home{margin-bottom:7px}

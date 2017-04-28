@@ -46,13 +46,13 @@ $(function () {
 			return window.matchMedia("(orientation: portrait)").matches ? true : false}
 		function modexs(){
 			return window.matchMedia("(max-width:767px)").matches ? true:false}
-		function cropthumb(x,y){
-		  var a=x.attr('src').split('/');
-		  // a.splice(7,1),a.splice(7,0,y);
-		  a.splice(4,1),a.splice(4,0,y);
-		  return "<img src='"+a.toString().replace(/,/g,'/')+"' alt='"+x.attr
-		  ('alt')+"'></img>";
-		}
+		// function cropthumb(x,y){
+		//   var a=x.attr('src').split('/');
+		//   // a.splice(7,1),a.splice(7,0,y);
+		//   a.splice(4,1),a.splice(4,0,y);
+		//   return "<img src='"+a.toString().replace(/,/g,'/')+"' alt='"+x.attr
+		//   ('alt')+"'></img>";
+		// }
 
 		function persingkat(kata,batas){
 			var  singkat= kata.substring(0,batas);
@@ -115,7 +115,7 @@ $(function () {
 					// alert(y);
 					// y.join("/ ");
 					// z=y.toString();
-					x.length ? x.closest('a').html(cropthumb(x,'jq')):'';
+					// x.length ? x.closest('a').html(cropthumb(x,'jq')):'';
 					// x.length ? x.closest('a').html(cropthumb(x,'jqueryholic')):'';
 					// alert(z.replace(/,/g,'/'));
 					// alert(y.toString());
@@ -129,6 +129,7 @@ $(function () {
 					// $(this).html(persingkat($(this).html(), singkatjudul));
 				// }
 			});
+			$("#jqh-home .thumbnail img").unveil(200);
 		}
 
 		// $('.jqh-archive #BlogArchive1_ArchiveList > ul > li').each(function(){
@@ -193,7 +194,7 @@ $(function () {
 			singkatpopular();
 			$('#jqh-home .jqh-bars').closest('a').removeClass('hidden'),$('#jqh-home .sharemobile').hide();
 			$('#jqh-home .jqh-bars').click(function(){
-				$(this).toggleClass('active'),$('#jqh-home .sharemobile').toggleClass('visible-xs');
+				$(this).toggleClass('active'),$(this).closest('.col-xs-2').siblings('.col-xs-12').find('.sharemobile').toggleClass('visible-xs');
 			});
 	  }
 	  window.addEventListener("resize", function() {

@@ -2,6 +2,7 @@ $(function () {
 	if($('body').attr('data-template') == 'mmbbproject.github.io'){
 				// alert(dicoba == 1 ? 'satu' : dicoba == 2 ? 'dua' : '');
 		// baris pertama ragam warna biru, kedua hijau, ketiga kuning/merah
+
 		var _colors = ['#00C7F2','#01B3E3','#00B0B9','#0093DA','#0072C6','#0074E4','#0084FF',
 		'#4CAF50','#25D366','#107C10','#00B1AB','#39A85B','#21B352','#7AC142','#A4C639',
 		'#E44600','#EE6123','#FE7A16','#F38936','#FB4226','#C50000','#FF4500'],
@@ -59,6 +60,14 @@ $(function () {
 			return (kata.length > (batas -3)) ? singkat + '...' : kata; 
 		}
 
+		function wbr(x){
+			var y = x.split(""),z='<wbr />';
+			for (var i=0;i<y.length; i++){
+				if(!((i+1)%3)) y[i] = y[i]+z;
+			}
+			y.join("");
+			return ("" + y).replace(/,/g,'');
+		}
 		function singkatpopular(){
 				$('.jqh-sidepopularpost .media-body p').each(function(){
 					// var x = $(this).closest('.media-body');
@@ -89,21 +98,18 @@ $(function () {
 				$(this).hasClass('active') ? '' : $(this).toggleClass('terpilih');
 				// $(this).toggleClass('sidelist').removeClass('sidelist');
 			});
-		}
+		}	
 
-		$('.jqh-category ul li .btn-group a:first-of-type').each(function(){
-			$(this).attr('href') ==  JQH['curl'] ? $(this).addClass('active').attr('href','javascript:;').siblings().addClass('active').attr('href','javascript:;'):'';
-		});
-		
-		if(['index','archive'].indexOf(JQH['cpage'] != -1)){
-		// if(JQH['cpage'] == 'index' || JQH['cpage'] == 'archive'){	
+		// if(['index','archive'].indexOf(JQH['cpage'] != -1)){
+		if(JQH['cpage'] == 'index' || JQH['cpage'] == 'archive'){	
 			$('#jqh-home .thumbnail').each(function(){
 				// alert($(this).find('a').html());
 				// if($(this).has('a')){
 					// $(this).children('a').html(persingkat($(this).children('a').html(), singkatjudul));
 					// var a=$(this).find('.home-title a'),x = $(this).find('img'), y=x.attr('data-gambar').split('_');
-					var z,a=$(this).find('.home-title a'),x = $(this).find('jqh-img');
+					var z,a=$(this).find('.home-title a');
 					a.length ? a.html(persingkat(a.html(), JQH['hmtitle'])):'';
+					// $(this).find("img").trigger("unveil");
 					// x.attr('src',y[0]+'_gray_'+y[2]+'_'+y[3]);
 					// x.attr('src',y[0]+'/'+y[1]+'/'+y[2]+'/'+y[3]+'/'+y[4]+'/'+y[5]+'/'+y[6]+'/jqueryholic/'+y[8]);
 					
@@ -129,7 +135,7 @@ $(function () {
 					// $(this).html(persingkat($(this).html(), singkatjudul));
 				// }
 			});
-			$("#jqh-home .thumbnail img").unveil(200);
+			$("#jqh-home .thumbnail img").unveil();
 		}
 
 		// $('.jqh-archive #BlogArchive1_ArchiveList > ul > li').each(function(){
@@ -163,6 +169,9 @@ $(function () {
 					x.siblings('a').remove(),x.removeClass('hidden').html(f).closest('li').prepend(y);
 					// alert(c);
 				});
+
+				$("article .post-detail .post-body img").unveil(15);
+				
 			}
 		
 			// var bulan = ['januari', 'februari', 'maret','april', 'mei', 'juni', 'juli', 'agustus', 'september', 'oktober', 'november', 'desember'];
@@ -180,6 +189,8 @@ $(function () {
 				tgl = (tgl.length == 1 ? '0'+tgl:tgl);
 
 				z.html("<span class='tgl'>"+tgl+"</span><span class='bln'>"+x[0]+"</span><span class='thn'>"+x[2]+"</span>");
+
+				$(".post-terkait .thumbnail img").unveil();
 			}
 			if(JQH['sidecolored']){
 				$('#jqh-postdetail .crandom').each(function(){
@@ -191,12 +202,24 @@ $(function () {
 		}
 
 		if(JQH['modeHP']){
-			singkatpopular();
+			
 			$('#jqh-home .jqh-bars').closest('a').removeClass('hidden'),$('#jqh-home .sharemobile').hide();
-			$('#jqh-home .jqh-bars').click(function(){
+
+			$('#jqh-home .jqh-bars').on('click',function(){
 				$(this).toggleClass('active'),$(this).closest('.col-xs-2').siblings('.col-xs-12').find('.sharemobile').toggleClass('visible-xs');
 			});
+			singkatpopular();
+			var a = $('#jqh-postdetail .post-body h3.m-post-title');
+			a.html(wbr(a.html()));
+			// alert(wbr(a.html()));
 	  }
+
+	  $("#jqh-sidebar .jqh-sidepopularpost .media-left img").unveil();
+	  
+	  $('.jqh-category ul li .btn-group a:first-of-type').each(function(){
+	  	$(this).attr('href') ==  JQH['curl'] ? $(this).addClass('active').attr('href','javascript:;').siblings().addClass('active').attr('href','javascript:;'):'';
+	  });
+
 	  window.addEventListener("resize", function() {
 
 	            var winwidth = $(window).width(),winheight=$(window).height();

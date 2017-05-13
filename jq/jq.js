@@ -60,14 +60,14 @@ $(function () {
 			return (kata.length > (batas -3)) ? singkat + '...' : kata; 
 		}
 
-		function wbr(x){
-			var y = x.split(""),z='<wbr />';
-			for (var i=0;i<y.length; i++){
-				if(!((i+1)%3)) y[i] = y[i]+z;
-			}
-			y.join("");
-			return ("" + y).replace(/,/g,'');
-		}
+		// function wbr(x){
+		// 	var y = x.split(""),z='<wbr />';
+		// 	for (var i=0;i<y.length; i++){
+		// 		if(!((i+1)%3)) y[i] = y[i]+z;
+		// 	}
+		// 	y.join("");
+		// 	return ("" + y).replace(/,/g,'');
+		// }
 		function singkatpopular(){
 				$('.jqh-sidepopularpost .media-body p').each(function(){
 					// var x = $(this).closest('.media-body');

@@ -171,7 +171,7 @@ $(function () {
 				});
 
 				$("article .post-detail .post-body img").unveil(15);
-				
+
 			}
 		
 			// var bulan = ['januari', 'februari', 'maret','april', 'mei', 'juni', 'juli', 'agustus', 'september', 'oktober', 'november', 'desember'];
@@ -209,9 +209,10 @@ $(function () {
 				$(this).toggleClass('active'),$(this).closest('.col-xs-2').siblings('.col-xs-12').find('.sharemobile').toggleClass('visible-xs');
 			});
 			singkatpopular();
-			var a = $('#jqh-postdetail .post-body h3.m-post-title');
-			a.html(wbr(a.html()));
-			// alert(wbr(a.html()));
+			// if(JQH['cpage'] == 'item'){
+			// 	var a = $('#jqh-postdetail .post-body h3.m-post-title');
+			// 	a.html(wbr(a.html()));
+			// }
 	  }
 
 	  $("#jqh-sidebar .jqh-sidepopularpost .media-left img").unveil();

@@ -21,9 +21,9 @@
         loaded;
 
     this.one("unveil", function() {
-      var source = this.getAttribute(attrib),
-          mHP=source.split('/'),
-          sz=mHP[7];
+      var source = this.getAttribute(attrib);
+          // mHP=source.split('/'),
+          // sz=mHP[7];
       source = source || this.getAttribute("data-src");
 
       /* 
@@ -43,7 +43,7 @@
             sz = 's1600';
           }
           // sz = (!JQH['modeHP'] ? 's320' : sz);
-          mHP.splice(7,1),mHP.splice(7,0,sz),mHP.toString(),mHP=("" + mHP).replace(/,/g,'/'),source = mHP;
+          // mHP.splice(7,1),mHP.splice(7,0,sz),mHP.toString(),mHP=("" + mHP).replace(/,/g,'/'),source = mHP;
         }
       }
 

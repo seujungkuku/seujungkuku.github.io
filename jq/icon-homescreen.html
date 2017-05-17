@@ -42,17 +42,31 @@
 
   <link href='jqh-iphone/jqh-iphone-bluewhite-215-top.png' rel='apple-touch-icon' sizes='215x215'/>
 
-  <link href='jqh-android/shadow/jqh-android-blue-shadow-192.png' rel='icon' sizes='192x192'/>
-  <!-- <link href="icon-precompressed/jqh-favicon-48.ico" rel="icon" type="image/x-icon"/> -->
+  <link href='jqh-circle/jqh-circle-blue-shadow-192-marginfix.png' rel='icon' sizes='192x192'/>
+  <!-- <link href='jqh-android/shadow/jqh-android-blue-shadow-192.png' rel='icon' sizes='192x192'/> -->
+  <!-- <link href="jqh-circle/jqh-favicon-48.ico" rel="icon" type="image/x-icon"/> -->
 
     <title>Home - jQueryHolic</title>
+    <style>
+      body{font-family: Menlo,Monaco,Consolas,"Courier New",monospace}
+      .isi {min-height: 800px}
+    </style>
     <script>
-
+      function close_window(){
+        if (confirm("Close Window?")) {
+          close();
+        }
+          // atau bisa pakai window.close(); di event onclik button
+      }
     </script>
 
   </head>
   <body>
 	<h1>Test shortcut icon di home screen</h1>
-	<h2>Tanpa favicon, hanya icon png khusus android, iphone dan windows phone</h2>
+  <div class="isi">
+    <button onclick="close_window();return false;">Keluar</button>
+  </div>
+
+	<!-- <h2>Tanpa favicon, hanya icon png khusus android, iphone dan windows phone</h2> -->
   </body>
 </html>
